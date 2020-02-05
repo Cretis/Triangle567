@@ -44,7 +44,7 @@ def classifyTriangle(a, b, c):
     # is important for correctness
     # the sum of any two sides must be strictly less than the third side
     # of the specified shape is not a triangle
-    if not (a >= abs((b - c))) or not (b >= abs((a - c))) or not (c >= abs((a - b))):
+    if not (a > abs((b - c))) or not (b > abs((a - c))) or not (c > abs((a - b))):
         return 'NotATriangle'
 
     # now we know that we have a valid triangle 
